@@ -1,17 +1,54 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset='UTF-8'>
-    <title> title </title>
-    <link rel='stylesheet'
-    href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css' />
+    <title> Opening Training </title>
     <script src='http://code.jquery.com/jquery-3.3.1.min.js'
     integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
     crossorigin='anonymous'></script>
+    <link rel='stylesheet' href='chessboardjs-0.3.0/css/chessboard-0.3.0.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <!-- Materialize -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel='stylesheet' href='styles.css'>
   </head>
   <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large button-collapse">
+        <i class="material-icons">menu</i></a>
+        <a href="#" class="brand-logo">Chess Openings Trainer</a>
+      </div>
+    </nav>
+    <ul class="sidenav" id="slide-out">
+      <li>
+        <h4 class="white-text valign center">Options</h4>
+      </li>
+      <li>
+        <a href="#!" class="white-text">My Openings</a>
+      </li>
+      <li>
+        <a href="#!" class="white-text">New Opening</a>
+      </li>
+      <li>
+        <a href="#!" class="white-text">New Variation</a>
+      </li>
+      <li>
+        <a href="#!" class="white-text">Practice</a>
+      </li>
+      <li>
+        <a href="#!" class="white-text">Statistics</a>
+      </li>
+    </ul>
+    <div id="chess-container" class="valign-wrapper">
+      <div id="board1"></div>
+    </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src='chessboardjs-0.3.0/js/chessboard-0.3.0.min.js'></script>
     <script src='script.js'></script>
   </body>
 </html>

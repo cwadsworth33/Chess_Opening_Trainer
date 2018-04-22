@@ -1,0 +1,35 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background-color: #8ad353;
+  height: 100vh;
+}
+
+#board1{
+  margin: auto;
+  width: 500px;
+}
+
+h1{
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+nav{
+  background-color: #333;
+}
+
+.sidenav{
+  background-color: #164899;
+  padding: 0px;
+}
+
+#chess-container{
+  height: calc(100% - 65px);
+}
+
+.collection-item {
+  background-color: black;
+}
