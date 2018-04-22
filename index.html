@@ -16,35 +16,70 @@
     <link rel='stylesheet' href='styles.css'>
   </head>
   <body>
+    <!--Navbar-->
     <nav>
       <div class="nav-wrapper">
         <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large button-collapse">
         <i class="material-icons">menu</i></a>
-        <a href="#" class="brand-logo">Chess Openings Trainer</a>
+        <a href="#" class="brand-logo" id="title">Chess Openings Trainer</a>
       </div>
     </nav>
+    <!--Sidenav-->
     <ul class="sidenav" id="slide-out">
       <li>
         <h4 class="white-text valign center">Options</h4>
       </li>
-      <li>
+      <li id="sidenav-my_openings">
         <a href="#!" class="white-text">My Openings</a>
       </li>
-      <li>
+      <li id="sidenav-new_openings">
         <a href="#!" class="white-text">New Opening</a>
       </li>
-      <li>
+      <li id="sidenav-new_variation">
         <a href="#!" class="white-text">New Variation</a>
       </li>
-      <li>
+      <li id="sidenav-practice">
         <a href="#!" class="white-text">Practice</a>
       </li>
-      <li>
+      <li id="sidenav-statistics">
         <a href="#!" class="white-text">Statistics</a>
       </li>
     </ul>
-    <div id="chess-container" class="valign-wrapper">
-      <div id="board1"></div>
+    <!--Chessboard Container-->
+    <div id="chess-container" class="valign-wrapper center-align">
+      <!--Landing Page-->
+      <div id="home-page" style="width: 850px; margin: auto;">
+        <h3>Welcome to Chess Openings Trainer!</h3>
+        <p>Use this app to practice memorizing chess openings! Add openings and
+          variations, then practice playing through them.
+        </p>
+        <div style="height: 150px;">
+        </div>
+      </div>
+      <!--Board and Menu-->
+      <div style="width: 750px; height: 502px; margin: auto;" id="board-and-menu" class="hide">
+      <div id="board1" style="display:inline-block;" class="left"></div>
+      <div id="display-menu" style="height: 100%; overflow: scroll;" class="right">
+        <div class="collection with-header" id="display-menu-collection">
+        </div>
+      </div>
+      <div style="clear: both; height: 50px;"></div>
+    </div>
+    <!--New Opening-->
+    <div id="new-opening-form-container" class="hide row white" >
+      <div class="row" style="border-bottom: 1px solid black; ">
+        <h3 class="center-align">New Opening</h3>
+      </div>
+      <form class="col 12" style="width: 100%;">
+        <div class="row">
+        <div class="input-field col s12">
+          <input id="opening_name" type="text">
+          <label for="opening_name">Opening Name</label>
+        </div>
+        </div>
+      </form>
+      <button class="waves-effect waves-light btn" style="width: 100%;" id="add-opening">Add Opening</button>
+    </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>

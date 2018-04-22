@@ -33,3 +33,9 @@ nav{
 .collection-item {
   background-color: black;
 }
+
+#new-opening-form-container{
+  width: 80%;
+  border: 1px solid black;
+  border-radius: 3px;
+}
